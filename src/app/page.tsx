@@ -9,8 +9,6 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { TheoryOfChange } from "@/components/theory-of-change";
 
-export const dynamic = "force-static";
-
 export default function Home() {
   return (
     <>

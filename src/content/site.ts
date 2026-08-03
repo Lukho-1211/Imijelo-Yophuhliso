@@ -190,23 +190,23 @@ export const site = {
   images: {
     hero: {
       src: "/images/hero.jpg",
-      alt: "Placeholder: community gathering. Replace with authentic Imijelo activity photo.",
+      alt: "Women and children gathered under a tent at a lively South African community meeting.",
     },
     sgm: {
       src: "/images/sgm.jpg",
-      alt: "Placeholder: youth learning together. Replace with Smart Generation Movement photo.",
+      alt: "Young learners smile and raise their hands in an energetic classroom session.",
     },
     inclusion: {
       src: "/images/inclusion.jpg",
-      alt: "Placeholder: family and caregiver support. Replace with inclusion programme photo.",
+      alt: "Community members, including people using mobility aids, gather outdoors in shared support.",
     },
     intergenerational: {
       src: "/images/intergenerational.jpg",
-      alt: "Placeholder: generations learning together. Replace with intergenerational activity photo.",
+      alt: "Women and children sit together under trees in a shaded community gathering.",
     },
     work: {
       src: "/images/work.jpg",
-      alt: "Placeholder: community action. Replace with Imijelo field photo.",
+      alt: "A family in traditional Xhosa attire outdoors in East London, Eastern Cape.",
     },
   },
 } as const;
