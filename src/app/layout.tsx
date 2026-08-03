@@ -36,6 +36,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${lexend.variable} ${sourceSans.variable} h-full scroll-smooth antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full bg-paper font-sans text-ink">{children}</body>
     </html>
