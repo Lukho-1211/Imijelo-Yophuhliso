@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #1c1917;
+  --paper: #f7f6f2;
+  --soil: #7a4518;
+  --terracotta: #c45c2a;
+  --sage: #6b8f71;
+  --gold: #d4a017;
+  --river: #5b6f9a;
+  --accent: var(--terracotta);
+  --muted: #6b6560;
+  --line: #e4e0d8;
+  --surface: #ffffff;
+  --radius: 12px;
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-soil: var(--soil);
+  --color-terracotta: var(--terracotta);
+  --color-sage: var(--sage);
+  --color-gold: var(--gold);
+  --color-river: var(--river);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+  --radius-control: var(--radius);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--terracotta) 28%, white);
+  color: var(--ink);
+}
+
+.container-page {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-inline: 2rem;
+  }
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 3px;
+}
