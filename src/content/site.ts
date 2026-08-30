@@ -210,8 +210,8 @@ export const site = {
       alt: "Three generations of women in traditional dress together during a community gathering in Madwaleni.",
     },
     work: {
-      src: "/images/work.jpg",
-      alt: "A family in traditional Xhosa attire outdoors in East London, Eastern Cape.",
+      src: "/images/SGM session IMG-20211113.jpg (1).jpeg",
+      alt: "Young men seated outdoors under a tree during an SGM session with a facilitator in the Eastern Cape.",
     },
   },
 } as const;
