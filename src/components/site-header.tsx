@@ -44,13 +44,11 @@ export function SiteHeader() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/brand/logo-mark.png"
+            src="/brand/spiral.png"
             alt={site.name}
-            width={168}
-            height={58}
-            className={`h-9 w-auto transition-[filter] duration-300 md:h-11 ${
-              scrolled || open ? "" : "brightness-0 invert"
-            }`}
+            width={72}
+            height={72}
+            className="h-9 w-9 md:h-11 md:w-11"
             priority
           />
         </Link>

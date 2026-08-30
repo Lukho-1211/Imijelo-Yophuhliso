@@ -4,7 +4,7 @@ Replace these placeholder files in `public/images/` with authentic photography f
 
 | File | Suggested content | Recommended size |
 |------|-------------------|------------------|
-| `hero.jpg` | Full-bleed community gathering showing intergenerational participation and agency | 1920×1280 or larger, landscape |
+| `hero.jpeg` | Full-bleed community gathering showing intergenerational participation and agency | 1920×1280 or larger, landscape |
 | `work.jpg` | Community action or programme moment for the Work mosaic | 1400×900 |
 | `sgm.jpg` | Smart Generation Movement: youth learning, mentorship, or money-management session | 1600×1200 |
 | `inclusion.jpg` | Disability inclusion, parent support, or savings group activity | 1400×1000 |

@@ -28,28 +28,25 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="container-page relative z-10 w-full pb-14 pt-28 md:pb-20 md:pt-24">
+      <div className="container-page relative z-10 w-full pb-20 pt-28 md:pb-28 md:pt-24">
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-2xl"
         >
-          <div className="mb-5 flex items-center gap-3">
-            <Image
-              src="/brand/spiral.png"
-              alt=""
-              width={72}
-              height={72}
-              className="h-12 w-12 md:h-14 md:w-14"
-              priority
-            />
-            <p className="font-heading text-xl font-semibold tracking-tight text-white md:text-2xl">
-              {site.name}
-            </p>
-          </div>
-          <h1 className="max-w-xl text-4xl font-semibold leading-[1.1] tracking-tight text-white md:text-5xl lg:text-6xl">
-            {site.hero.headline}
+          <p className="mb-5 font-heading text-xl font-semibold tracking-tight text-white md:text-2xl">
+            {site.name}
+          </p>
+          <h1 className="max-w-2xl text-3xl font-semibold leading-[1.15] tracking-tight text-white md:text-4xl lg:text-5xl">
+            {site.hero.headline.map((line, index) => (
+              <span
+                key={line}
+                className={`block ${index === 1 ? "md:whitespace-nowrap" : ""}`}
+              >
+                {line}
+              </span>
+            ))}
           </h1>
           <p className="mt-5 max-w-[36rem] text-base leading-relaxed text-white/90 md:text-lg">
             {site.hero.support}

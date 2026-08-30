@@ -17,9 +17,13 @@ export const site = {
     { label: "Contact", href: "#contact" },
   ],
   hero: {
-    headline: "People and communities as agents of change",
+    headline: [
+      "Empowering Youth.",
+      "Enabling Communities.",
+      "Inspiring Futures.",
+    ] as const,
     support:
-      "Young people, families, caregivers, and elders build agency, strengthen relationships, and grow opportunities for wellbeing.",
+      "Enabling inclusive communities where people contribute their strengths, participate meaningfully, and thrive together.",
   },
   theoryOfChange: {
     title: "Our Theory of Change",
@@ -189,7 +193,7 @@ export const site = {
   },
   images: {
     hero: {
-      src: "/images/hero.jpg",
+      src: "/images/hero.jpeg",
       alt: "Women and children gathered under a tent at a lively South African community meeting.",
     },
     sgm: {
