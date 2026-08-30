@@ -4,7 +4,7 @@ import { EnvelopeSimple, FacebookLogo, MapPin, Phone } from "@phosphor-icons/rea
 import { site } from "@/content/site";
 
 export function SiteFooter() {
-  const { contact, pillars, nav } = site;
+  const { contact, pillars, nav, theoryOfChange } = site;
 
   return (
     <footer id="contact" className="bg-ink text-white">
@@ -22,7 +22,7 @@ export function SiteFooter() {
               {site.description}
             </p>
             <p className="mt-6 text-sm font-semibold text-gold">
-              Identity → Behaviour → Agency → Opportunity
+              {theoryOfChange.steps.map((step) => step.key).join(" → ")}
             </p>
           </div>
 

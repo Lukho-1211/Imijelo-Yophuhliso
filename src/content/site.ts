@@ -27,23 +27,19 @@ export const site = {
   },
   theoryOfChange: {
     title: "Our Theory of Change",
-    body: "Meaningful social change happens when people, families, and communities build agency, strengthen relationships, foster inclusion, and participate actively in community life.",
+    body: "We believe that every person has strengths to contribute. When people participate meaningfully in community life and are valued for who they are, communities become more inclusive and creating a society where everyone can thrive together.",
     steps: [
       {
-        key: "Identity",
-        detail: "A clear sense of self, belonging, and community role",
+        key: "Person",
+        detail: "Contribute strengths.",
       },
       {
-        key: "Behaviour",
-        detail: "Positive choices shaped by skills, peers, and support",
+        key: "Community",
+        detail: "Promote participation and belonging.",
       },
       {
-        key: "Agency",
-        detail: "Confidence and capacity to act with others",
-      },
-      {
-        key: "Opportunity",
-        detail: "Pathways that improve wellbeing and futures",
+        key: "Society",
+        detail: "Thrive together.",
       },
     ] as const,
   },
@@ -54,46 +50,39 @@ export const site = {
     items: [
       {
         id: "future-readiness",
-        name: "Future Readiness and Opportunity Development",
-        motto: "Personal Growth Through Money Management",
+        name: "Youth Empowerment and Opportunity Development",
+        motto: "",
         accent: "terracotta" as const,
-        focus: [
-          "Money management",
-          "Leadership development",
-          "Career readiness",
-          "Mentorship",
-          "Future planning",
-          "Agency",
-        ],
+        focus: ["Identity", "Behaviour", "Agency", "Opportunity"],
         summary:
-          "Using money management as a pathway to personal growth, informed choices, and future readiness. Home of the Smart Generation Movement.",
+          "Supporting young people to develop the confidence, leadership, life skills, and agency needed to navigate their transition into adulthood and pursue meaningful opportunities.",
       },
       {
         id: "wellbeing",
-        name: "Community Wellbeing and Inclusion",
-        motto: "Collective Agency for Wellbeing and Inclusion",
+        name: "Disability Inclusion and Family Support",
+        motto: "Enabling Inclusion, Participation, and Belonging",
         accent: "sage" as const,
         focus: [
-          "Disability inclusion",
           "Parent support groups",
-          "Youth wellbeing",
-          "Savings and investment groups",
+          "Savings and Investment Groups",
+          "Caregiver training and peer learning",
+          "Inclusive ECD programmes",
         ],
         summary:
-          "Initiatives that strengthen wellbeing, inclusion, family resilience, and community participation for youth and caregivers.",
+          "Promoting inclusive early childhood development and empowering parents and caregivers to support the participation, inclusion, and wellbeing of children with disabilities.",
       },
       {
         id: "intergenerational",
-        name: "Intergenerational Care and Learning",
-        motto: "Learning Across Generations, Growing Together",
+        name: "Intergenerational Learning and Social Participation",
+        motto: "Learning Across Generations, Growing Communities Together",
         accent: "river" as const,
         focus: [
-          "Intergenerational care and learning",
-          "Community participation",
-          "Active citizenship",
+          "Intergenerational Indigenous Learning",
+          "Community-Engaged Knowledge Exchange",
+          "Volunteer and participation opportunities",
         ],
         summary:
-          "Children, youth, and older adults exchange knowledge through care, play, storytelling, and community dialogue.",
+          "Creating opportunities that enable intergenerational learning, mutual support, and meaningful participation in community life.",
       },
     ],
   },
@@ -113,25 +102,29 @@ export const site = {
       "Young people gain knowledge, skills, networks, and confidence to navigate the transition into adulthood.",
   },
   inclusion: {
-    title: "Wellbeing built with families and peers",
-    body: "Disability inclusion programmes, parent support groups, youth wellbeing initiatives, and savings groups strengthen financial resilience and more inclusive communities.",
+    title: "Disability Inclusion and Family Support",
+    body: "Strengthening the environments that enable children with disabilities to participate fully in family, community, and learning contexts. The parent support groups strengthen families, promote peer learning among caregivers, and contribute to more inclusive communities for children with disabilities.",
     points: [
       {
-        title: "Disability inclusion",
-        text: "Community-based platforms that centre participation and belonging.",
+        title: "Parent Support Groups",
+        text: "Create safe spaces where parents can connect, share experiences, access support, and learn from one another.",
       },
       {
-        title: "Parent support",
-        text: "Caregivers of children with disabilities learn together and lead together.",
+        title: "Savings and Investment Groups",
+        text: "Strengthen financial capability, collective saving, and economic resilience through community-based savings and investment practices.",
       },
       {
-        title: "Savings and investment",
-        text: "Pooled savings fund livelihoods and economic inclusion for youth, including youth with disabilities.",
+        title: "Caregiver Training and Peer Learning",
+        text: "Build caregiver knowledge, confidence, and skills through practical training and shared learning experiences.",
+      },
+      {
+        title: "Inclusive ECD Programmes",
+        text: "Support the participation, learning, and development of all children through inclusive early childhood development opportunities that value diversity and belonging.",
       },
     ],
   },
   intergenerational: {
-    title: "Learning across generations",
+    title: "Intergenerational Learning and Social Participation",
     body: "Inclusive communities grow when children, youth, and older adults engage in care, learning, and knowledge exchange.",
     activities: [
       "Indigenous play",
@@ -140,6 +133,10 @@ export const site = {
       "Intergenerational learning",
       "Community dialogues",
     ],
+    communityWellbeing: {
+      title: "Community wellbeing",
+      body: "Serves as the overarching outcome of all our work. By advancing youth empowerment, disability inclusion, intergenerational learning, and social participation, Imijelo contributes to stronger relationships, greater inclusion, increased agency, and more resilient communities.",
+    },
   },
   evidence: {
     title: "Thoughtful and evidence-informed",
@@ -197,16 +194,20 @@ export const site = {
       alt: "Women and children gathered under a tent at a lively South African community meeting.",
     },
     sgm: {
-      src: "/images/sgm.jpg",
+      src: "/images/SGM_1st Cohort_2023.JPG.jpeg",
       alt: "Young learners smile and raise their hands in an energetic classroom session.",
     },
     inclusion: {
-      src: "/images/inclusion.jpg",
-      alt: "Community members, including people using mobility aids, gather outdoors in shared support.",
+      src: "/images/parent support meeting.JPG.jpeg",
+      alt: "Parents and caregivers with young children seated together in a community hall for a parent support meeting.",
     },
     intergenerational: {
-      src: "/images/intergenerational.jpg",
-      alt: "Women and children sit together under trees in a shaded community gathering.",
+      src: "/images/Research Engagement_ Washington University students 20180910.jpg.jpeg",
+      alt: "Washington University students engage in research and learning with community members.",
+    },
+    intergenerationalMadwaleni: {
+      src: "/images/rural confr2 Madwaleni.jpg (1).jpeg",
+      alt: "Three generations of women in traditional dress together during a community gathering in Madwaleni.",
     },
     work: {
       src: "/images/work.jpg",

@@ -40,9 +40,11 @@ export function Pillars() {
                 <h3 className="text-2xl font-semibold tracking-tight text-ink md:text-3xl">
                   {first.name}
                 </h3>
-                <p className="mt-2 text-sm font-semibold text-soil">
-                  {first.motto}
-                </p>
+                {first.motto ? (
+                  <p className="mt-2 text-sm font-semibold text-soil">
+                    {first.motto}
+                  </p>
+                ) : null}
                 <p className="mt-4 max-w-[48ch] text-[15px] leading-relaxed text-muted">
                   {first.summary}
                 </p>

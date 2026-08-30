@@ -1,0 +1,205 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link [ref=e4] [cursor=pointer]:
+        - /url: "#home"
+        - img "Imijelo Yophuhliso" [ref=e5]
+      - navigation "Primary" [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: "#home"
+        - link "Approach" [ref=e8] [cursor=pointer]:
+          - /url: "#approach"
+        - link "Work" [ref=e9] [cursor=pointer]:
+          - /url: "#work"
+        - link "Get involved" [ref=e10] [cursor=pointer]:
+          - /url: "#get-involved"
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: "#contact"
+      - link "Get involved" [ref=e13] [cursor=pointer]:
+        - /url: "#get-involved"
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - img "Women and children gathered under a tent at a lively South African community meeting." [ref=e16]
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Imijelo Yophuhliso
+        - heading "Empowering Youth. Enabling Communities. Inspiring Futures." [level=1] [ref=e21]:
+          - generic [ref=e22]: Empowering Youth.
+          - generic [ref=e23]: Enabling Communities.
+          - generic [ref=e24]: Inspiring Futures.
+        - paragraph [ref=e25]: Enabling inclusive communities where people contribute their strengths, participate meaningfully, and thrive together.
+        - generic [ref=e26]:
+          - link "Get involved" [ref=e27] [cursor=pointer]:
+            - /url: "#get-involved"
+          - link "Explore our work" [ref=e28] [cursor=pointer]:
+            - /url: "#work"
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - heading "Our Theory of Change" [level=2] [ref=e32]
+        - paragraph [ref=e33]: We believe that every person has strengths to contribute. When people participate meaningfully in community life and are valued for who they are, communities become more inclusive and creating a society where everyone can thrive together.
+      - generic [ref=e34]:
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - paragraph [ref=e40]: Person
+            - paragraph [ref=e41]: Contribute strengths.
+          - listitem [ref=e42]:
+            - paragraph [ref=e46]: Community
+            - paragraph [ref=e47]: Promote participation and belonging.
+          - listitem [ref=e48]:
+            - paragraph [ref=e51]: Society
+            - paragraph [ref=e52]: Thrive together.
+        - paragraph [ref=e53]: Person → Community → Society
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - heading "Our work" [level=2] [ref=e57]
+        - paragraph [ref=e58]: Under one umbrella, Imijelo organises community-based platforms across three strategic pillars.
+      - generic [ref=e59]:
+        - article [ref=e61]:
+          - generic [ref=e62]:
+            - heading "Future Readiness and Opportunity Development" [level=3] [ref=e64]
+            - paragraph [ref=e65]: Personal Growth Through Money Management
+            - paragraph [ref=e66]: Using money management as a pathway to personal growth, informed choices, and future readiness. Home of the Smart Generation Movement.
+          - list [ref=e67]:
+            - listitem [ref=e68]: Money management
+            - listitem [ref=e69]: Leadership development
+            - listitem [ref=e70]: Career readiness
+            - listitem [ref=e71]: Mentorship
+        - img "A family in traditional Xhosa attire outdoors in East London, Eastern Cape." [ref=e74]
+        - article [ref=e76]:
+          - heading "Community Wellbeing and Inclusion" [level=3] [ref=e78]
+          - paragraph [ref=e79]: Collective Agency for Wellbeing and Inclusion
+          - paragraph [ref=e80]: Initiatives that strengthen wellbeing, inclusion, family resilience, and community participation for youth and caregivers.
+          - list [ref=e81]:
+            - listitem [ref=e82]: Disability inclusion
+            - listitem [ref=e83]: Parent support groups
+            - listitem [ref=e84]: Youth wellbeing
+            - listitem [ref=e85]: Savings and investment groups
+        - article [ref=e87]:
+          - heading "Intergenerational Care and Learning" [level=3] [ref=e89]
+          - paragraph [ref=e90]: Learning Across Generations, Growing Together
+          - paragraph [ref=e91]: Children, youth, and older adults exchange knowledge through care, play, storytelling, and community dialogue.
+          - list [ref=e92]:
+            - listitem [ref=e93]: Intergenerational care and learning
+            - listitem [ref=e94]: Community participation
+            - listitem [ref=e95]: Active citizenship
+    - generic [ref=e97]:
+      - img "Young learners smile and raise their hands in an energetic classroom session." [ref=e100]
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: Personal growth through money management
+        - heading "Smart Generation Movement" [level=2] [ref=e103]
+        - paragraph [ref=e104]: Our flagship youth platform helps young people develop identity, make positive life choices, build confidence and agency, and pursue opportunities for their future.
+        - list [ref=e105]:
+          - listitem [ref=e106]: Money management
+          - listitem [ref=e107]: Career readiness
+          - listitem [ref=e108]: Leadership development
+          - listitem [ref=e109]: Mentorship
+          - listitem [ref=e110]: Future planning
+          - listitem [ref=e111]: Agency
+        - paragraph [ref=e112]: Young people gain knowledge, skills, networks, and confidence to navigate the transition into adulthood.
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - heading "Wellbeing built with families and peers" [level=2] [ref=e117]
+        - paragraph [ref=e118]: Disability inclusion programmes, parent support groups, youth wellbeing initiatives, and savings groups strengthen financial resilience and more inclusive communities.
+        - img "Community members, including people using mobility aids, gather outdoors in shared support." [ref=e120]
+      - generic [ref=e121]:
+        - generic [ref=e123]:
+          - heading "Disability inclusion" [level=3] [ref=e124]
+          - paragraph [ref=e125]: Community-based platforms that centre participation and belonging.
+        - generic [ref=e127]:
+          - heading "Parent support" [level=3] [ref=e128]
+          - paragraph [ref=e129]: Caregivers of children with disabilities learn together and lead together.
+        - generic [ref=e131]:
+          - heading "Savings and investment" [level=3] [ref=e132]
+          - paragraph [ref=e133]: Pooled savings fund livelihoods and economic inclusion for youth, including youth with disabilities.
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - heading "Learning across generations" [level=2] [ref=e137]
+        - paragraph [ref=e138]: Inclusive communities grow when children, youth, and older adults engage in care, learning, and knowledge exchange.
+        - list [ref=e139]:
+          - listitem [ref=e140]: Indigenous play
+          - listitem [ref=e141]: Storytelling
+          - listitem [ref=e142]: Knowledge exchange
+          - listitem [ref=e143]: Intergenerational learning
+          - listitem [ref=e144]: Community dialogues
+      - img "Women and children sit together under trees in a shaded community gathering." [ref=e147]
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - heading "Thoughtful and evidence-informed" [level=2] [ref=e151]
+        - paragraph [ref=e152]: We balance warmth with accountability, tracking growth through shared tools and community agreements.
+      - generic [ref=e153]:
+        - generic [ref=e155]:
+          - heading "Poverty Stoplight baselines" [level=3] [ref=e156]
+          - paragraph [ref=e157]: Baseline surveys using Poverty Stoplight indicators.
+        - generic [ref=e159]:
+          - heading "Ongoing monitoring" [level=3] [ref=e160]
+          - paragraph [ref=e161]: Monthly monitoring and biannual evaluations.
+        - generic [ref=e163]:
+          - heading "Personal journals" [level=3] [ref=e164]
+          - paragraph [ref=e165]: Personal Development Journals and financial diaries for impact tracking.
+        - generic [ref=e167]:
+          - heading "Shared accountability" [level=3] [ref=e168]
+          - paragraph [ref=e169]: MoAs with community groups to guide expectations and accountability.
+    - generic [ref=e171]:
+      - generic [ref=e173]:
+        - heading "Join the circle of change" [level=2] [ref=e174]
+        - paragraph [ref=e175]: Become a Friend of Imijelo. Partner with us, strengthen community platforms, and help people access opportunities that improve wellbeing.
+      - generic [ref=e176]:
+        - generic [ref=e178]:
+          - heading "Partner with us" [level=3] [ref=e179]
+          - paragraph [ref=e180]: Support programmes, research, and community-based platforms.
+        - generic [ref=e182]:
+          - heading "Join Friends of Imijelo" [level=3] [ref=e183]
+          - paragraph [ref=e184]: Build a global network that sustains local leadership and learning.
+        - generic [ref=e186]:
+          - heading "Connect with the team" [level=3] [ref=e187]
+          - paragraph [ref=e188]: Reach out to explore collaboration in East London and beyond.
+      - generic [ref=e189]:
+        - link "Get involved" [ref=e190] [cursor=pointer]:
+          - /url: mailto:admin@imijelo.org
+        - link "Follow on Facebook" [ref=e191] [cursor=pointer]:
+          - /url: https://facebook.com/IMIJELO
+  - contentinfo [ref=e192]:
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - img "Imijelo Yophuhliso" [ref=e196]
+          - paragraph [ref=e197]: A community development organisation advancing youth empowerment, wellbeing, disability inclusion, and intergenerational learning in South Africa.
+          - paragraph [ref=e198]: Person → Community → Society
+        - generic [ref=e199]:
+          - paragraph [ref=e200]: Explore
+          - list [ref=e201]:
+            - listitem [ref=e202]:
+              - link "Home" [ref=e203] [cursor=pointer]:
+                - /url: "#home"
+            - listitem [ref=e204]:
+              - link "Approach" [ref=e205] [cursor=pointer]:
+                - /url: "#approach"
+            - listitem [ref=e206]:
+              - link "Work" [ref=e207] [cursor=pointer]:
+                - /url: "#work"
+            - listitem [ref=e208]:
+              - link "Get involved" [ref=e209] [cursor=pointer]:
+                - /url: "#get-involved"
+            - listitem [ref=e210]:
+              - link "Contact" [ref=e211] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e212]:
+          - paragraph [ref=e213]: Contact
+          - list [ref=e214]:
+            - listitem [ref=e215]:
+              - generic [ref=e218]: PO Box 2429, East London, 5241, South Africa
+            - listitem [ref=e219]:
+              - link "+27 (0)43 7530118" [ref=e220] [cursor=pointer]:
+                - /url: tel:+27437530118
+            - listitem [ref=e223]:
+              - link "admin@imijelo.org" [ref=e224] [cursor=pointer]:
+                - /url: mailto:admin@imijelo.org
+            - listitem [ref=e227]:
+              - link "facebook.com/IMIJELO" [ref=e228] [cursor=pointer]:
+                - /url: https://facebook.com/IMIJELO
+      - generic [ref=e231]:
+        - paragraph [ref=e232]: Imijelo Yophuhliso. Community development organisation, South Africa.
+        - list [ref=e233]:
+          - listitem [ref=e234]: Future Readiness and Opportunity Development
+          - listitem [ref=e235]: Community Wellbeing and Inclusion
+          - listitem [ref=e236]: Intergenerational Care and Learning
+  - button "Open Next.js Dev Tools" [ref=e242] [cursor=pointer]

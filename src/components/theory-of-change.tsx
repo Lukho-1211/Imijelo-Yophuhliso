@@ -17,7 +17,7 @@ export function TheoryOfChange() {
         </Reveal>
 
         <Reveal delay={0.08} className="mt-12 md:mt-16">
-          <ol className="grid gap-0 border-t border-line md:grid-cols-4">
+          <ol className="grid gap-0 border-t border-line md:grid-cols-3">
             {theoryOfChange.steps.map((step, index) => (
               <li
                 key={step.key}
@@ -32,9 +32,7 @@ export function TheoryOfChange() {
                           ? "var(--soil)"
                           : index === 1
                             ? "var(--terracotta)"
-                            : index === 2
-                              ? "var(--sage)"
-                              : "var(--river)",
+                            : "var(--sage)",
                     }}
                     aria-hidden
                   />
@@ -55,7 +53,7 @@ export function TheoryOfChange() {
             ))}
           </ol>
           <p className="mt-6 text-sm font-semibold tracking-wide text-soil">
-            Identity → Behaviour → Agency → Opportunity
+            {theoryOfChange.steps.map((step) => step.key).join(" → ")}
           </p>
         </Reveal>
       </div>
