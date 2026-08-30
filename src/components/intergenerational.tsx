@@ -6,7 +6,7 @@ export function Intergenerational() {
   const { intergenerational, images } = site;
 
   return (
-    <section className="bg-paper py-20 md:py-28">
+    <section className="bg-paper pt-20 pb-4 md:pt-28 md:pb-6">
       <div className="container-page flex flex-col gap-10 md:gap-14">
         <div className="grid items-stretch gap-10 md:grid-cols-2 md:gap-14">
           <Reveal>

@@ -5,18 +5,18 @@ export function Evidence() {
   const { evidence } = site;
 
   return (
-    <section className="bg-paper py-20 md:py-28">
+    <section className="bg-paper pt-4 pb-16 md:pt-6 md:pb-20">
       <div className="container-page">
         <Reveal>
           <h2 className="max-w-xl text-3xl font-semibold tracking-tight text-ink md:text-4xl">
             {evidence.title}
           </h2>
-          <p className="mt-4 max-w-[58ch] text-base leading-relaxed text-muted md:text-lg">
+          <p className="mt-3 max-w-[58ch] text-base leading-relaxed text-muted md:text-lg">
             {evidence.body}
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {evidence.items.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.05}>
               <div className="h-full border-t-2 border-sage pt-5">
