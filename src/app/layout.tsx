@@ -20,6 +20,10 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   title: `${site.name} | Community development`,
   description: site.description,
+  icons: {
+    icon: "/brand/spiral.png",
+    apple: "/brand/spiral.png",
+  },
   openGraph: {
     title: site.name,
     description: site.description,

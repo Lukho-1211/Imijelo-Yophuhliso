@@ -191,7 +191,7 @@ export const site = {
   images: {
     hero: {
       src: "/images/hero.jpeg",
-      alt: "Women and children gathered under a tent at a lively South African community meeting.",
+      alt: "Women celebrating outdoors beside a thatched rondavel in a rural South African community.",
     },
     sgm: {
       src: "/images/SGM_1st Cohort_2023.JPG.jpeg",
@@ -214,6 +214,32 @@ export const site = {
       alt: "Young men seated outdoors under a tree during an SGM session with a facilitator in the Eastern Cape.",
     },
   },
+  heroSlides: [
+    {
+      src: "/images/hero.jpeg",
+      alt: "Women celebrating outdoors beside a thatched rondavel in a rural South African community.",
+    },
+    {
+      src: "/images/parent support meeting.JPG.jpeg",
+      alt: "Parents and caregivers with young children seated together in a community hall for a parent support meeting.",
+    },
+    {
+      src: "/images/Research Engagement_ Washington University students 20180910.jpg.jpeg",
+      alt: "Washington University students engage in research and learning with community members.",
+    },
+    {
+      src: "/images/rural confr2 Madwaleni.jpg (1).jpeg",
+      alt: "Three generations of women in traditional dress together during a community gathering in Madwaleni.",
+    },
+    {
+      src: "/images/SGM session IMG-20211113.jpg (1).jpeg",
+      alt: "Young men seated outdoors under a tree during an SGM session with a facilitator in the Eastern Cape.",
+    },
+    {
+      src: "/images/SGM_1st Cohort_2023.JPG.jpeg",
+      alt: "Young learners smile and raise their hands in an energetic classroom session.",
+    },
+  ],
 } as const;
 
 export type SiteContent = typeof site;

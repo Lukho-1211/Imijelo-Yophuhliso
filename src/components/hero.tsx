@@ -2,31 +2,83 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useCallback, useEffect, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { site } from "@/content/site";
 
+const SLIDE_INTERVAL_MS = 6000;
+const CROSSFADE_S = 0.7;
+
 export function Hero() {
   const reduce = useReducedMotion();
+  const slides = site.heroSlides;
+  const [active, setActive] = useState(0);
+
+  const goTo = useCallback(
+    (index: number) => {
+      setActive(((index % slides.length) + slides.length) % slides.length);
+    },
+    [slides.length],
+  );
+
+  useEffect(() => {
+    if (reduce || slides.length < 2) return;
+
+    const id = window.setInterval(() => {
+      setActive((current) => (current + 1) % slides.length);
+    }, SLIDE_INTERVAL_MS);
+
+    return () => window.clearInterval(id);
+  }, [reduce, slides.length]);
+
+  const current = slides[active] ?? slides[0];
 
   return (
     <section
       id="home"
       className="relative flex min-h-[100dvh] items-end overflow-hidden"
+      aria-roledescription="carousel"
+      aria-label="Community photo slideshow"
     >
       <div id="nav-sentinel" className="pointer-events-none absolute inset-x-0 top-0 h-1" />
 
-      <Image
-        src={site.images.hero.src}
-        alt={site.images.hero.alt}
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
+      <div className="absolute inset-0" aria-hidden>
+        {slides.map((slide, index) => {
+          const isActive = reduce ? index === 0 : index === active;
+          return (
+            <motion.div
+              key={slide.src}
+              className="absolute inset-0"
+              initial={false}
+              animate={{ opacity: isActive ? 1 : 0 }}
+              transition={
+                reduce
+                  ? { duration: 0 }
+                  : { duration: CROSSFADE_S, ease: [0.16, 1, 0.3, 1] }
+              }
+              style={{ zIndex: isActive ? 1 : 0 }}
+            >
+              <Image
+                src={slide.src}
+                alt=""
+                fill
+                priority={index === 0}
+                sizes="100vw"
+                className="object-cover"
+              />
+            </motion.div>
+          );
+        })}
+      </div>
+
       <div
-        className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/45 to-ink/25"
+        className="absolute inset-0 z-[2] bg-gradient-to-t from-ink/85 via-ink/45 to-ink/25"
         aria-hidden
       />
+
+      <p className="sr-only" aria-live="polite">
+        Slide {active + 1} of {slides.length}: {current.alt}
+      </p>
 
       <div className="container-page relative z-10 w-full pb-20 pt-28 md:pb-28 md:pt-24">
         <motion.div
@@ -67,6 +119,33 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
+
+      {!reduce && slides.length > 1 ? (
+        <div
+          className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 md:bottom-8"
+          role="tablist"
+          aria-label="Slideshow controls"
+        >
+          {slides.map((slide, index) => {
+            const selected = index === active;
+            return (
+              <button
+                key={slide.src}
+                type="button"
+                role="tab"
+                aria-selected={selected}
+                aria-label={`Show slide ${index + 1}: ${slide.alt}`}
+                onClick={() => goTo(index)}
+                className={`focus-ring h-2.5 rounded-full transition-all duration-300 ${
+                  selected
+                    ? "w-7 bg-white"
+                    : "w-2.5 bg-white/45 hover:bg-white/75"
+                }`}
+              />
+            );
+          })}
+        </div>
+      ) : null}
     </section>
   );
 }
