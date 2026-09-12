@@ -65,7 +65,6 @@ export const site = {
         focus: [
           "Parent support groups",
           "Savings and Investment Groups",
-          "Caregiver training and peer learning",
           "Inclusive ECD programmes",
         ],
         summary:
@@ -73,8 +72,8 @@ export const site = {
       },
       {
         id: "intergenerational",
-        name: "Intergenerational Learning and Social Participation",
-        motto: "Learning Across Generations, Growing Communities Together",
+        name: "Intergenerational Care and Learning",
+        motto: "Learning Across Generations, Growing Together",
         accent: "river" as const,
         focus: [
           "Intergenerational Indigenous Learning",
@@ -114,17 +113,13 @@ export const site = {
         text: "Strengthen financial capability, collective saving, and economic resilience through community-based savings and investment practices.",
       },
       {
-        title: "Caregiver Training and Peer Learning",
-        text: "Build caregiver knowledge, confidence, and skills through practical training and shared learning experiences.",
-      },
-      {
         title: "Inclusive ECD Programmes",
         text: "Support the participation, learning, and development of all children through inclusive early childhood development opportunities that value diversity and belonging.",
       },
     ],
   },
   intergenerational: {
-    title: "Intergenerational Learning and Social Participation",
+    title: "Intergenerational Care and Learning",
     body: "Inclusive communities grow when children, youth, and older adults engage in care, learning, and knowledge exchange.",
     activities: [
       "Indigenous play",
@@ -134,7 +129,7 @@ export const site = {
       "Community dialogues",
     ],
     communityWellbeing: {
-      title: "Community wellbeing",
+      title: "Community Wellbeing and Inclusion",
       body: "Serves as the overarching outcome of all our work. By advancing youth empowerment, disability inclusion, intergenerational learning, and social participation, Imijelo contributes to stronger relationships, greater inclusion, increased agency, and more resilient communities.",
     },
   },

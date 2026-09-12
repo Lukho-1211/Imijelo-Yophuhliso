@@ -44,11 +44,11 @@ export function SiteHeader() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/brand/spiral.png"
+            src="/images/logo.png"
             alt={site.name}
-            width={72}
-            height={72}
-            className="h-9 w-9 md:h-11 md:w-11"
+            width={360}
+            height={120}
+            className="h-9 w-auto md:h-11"
             priority
           />
         </Link>
